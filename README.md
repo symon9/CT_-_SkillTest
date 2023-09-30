@@ -16,3 +16,4 @@ This repository contains the HTML source code for the "Los Angeles Mountains" we
 - A scroll-to-top button for easy navigation.
 
 This is a Skill test from Coalition Technologies taken by me for a role of a frontend developer.
+Submitted on 30th september 2023.
