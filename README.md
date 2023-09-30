@@ -1,4 +1,4 @@
-# Los Angeles Mountains Website
+# Los Angeles Mountains Website - Skill Test
 
 This repository contains the HTML source code for the "Los Angeles Mountains" website. This website is designed to provide information about the beauty of Los Angeles mountains, guided hikes, and outdoor activities. The website includes details about the history of the mountains and climbing teams, as well as stunning visuals of the mountains.
 
