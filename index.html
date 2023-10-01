@@ -20,7 +20,8 @@
     <!-- bootstrap js -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
-  </body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header id="home">
@@ -72,58 +73,16 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolor perspiciatis iusto autem cumque minus a tempore laboriosam quos enim tempora, odit impedit neque reiciendis in illo veniam laudantium consequatur aperiam molestiae commodi? Vero recusandae voluptatum, quia repellendus nesciunt eius perferendis corrupti laboriosam odit autem voluptatem </p>
       </div>
 
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="cards-wrapper">
-            <div class="card">
-              <img src="./img/pexels-pixabay-372098.jpg" class="card-img-top" alt="A man standing on a mountain">
-              
-            </div>
-            <div class="card d-none d-md-block">
-              <img src="./img/pexels-stephan-seeber-1054201.jpg" class="card-img-top" alt="A mountain">
-              
-            </div>
-            <div class="card d-none d-md-block">
-              <img src="./img/pexels-pixabay-372098.jpg" class="card-img-top" alt="A man standing on a mountain">
-              
-            </div>
-            <div class="card d-none d-md-block">
-              <img src="./img/pexels-pixabay-372098.jpg" class="card-img-top" alt="A man standing on a mountain">
-              
-            </div>
-            
-          </div>
-          </div>
-          <div class="carousel-item">
-            <div class="cards-wrapper">
-              <div class="card">
-                <img src="./img/pexels-pixabay-372098.jpg" class="card-img-top" alt="A man standing on a mountain">
-                
-              </div>
-              <div class="card d-none d-md-block">
-                <img src="./img/pexels-stephan-seeber-1054201.jpg" class="card-img-top" alt="A mountain">
-                
-              </div>
-              <div class="card d-none d-md-block">
-                <img src="./img/pexels-pixabay-372098.jpg" class="card-img-top" alt="A man standing on a mountain">
-                
-              </div>
-              <div class="card">
-                <img src="./img/pexels-jeanpaul-wettstein-18407714.jpg" class="card-img-top" alt="A mountain">
-                
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <!-- Indicators/dots -->
-      <div class="carousel-indicators p-4">
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-      </div>
-      </div>
+      <div class="owl-carousel owl-theme myOwl-carousel">
+        <div class="item"><img src="./img/pexels-francesco-ungaro-1525041.jpg" alt=""></div>
+        <div class="item"> <img src="./img/pexels-pixabay-372098.jpg" alt=""> </div>
+        <div class="item"><img src="./img/pexels-stephan-seeber-1054201.jpg" alt=""></div>
+        <div class="item"> <img src="./img/pexels-pixabay-267104.jpg" alt=""> </div>
+        <div class="item"> <img src="./img/pexels-pixabay-372098.jpg" alt=""> </div>
+        <div class="item"> <img src="./img/pexels-pixabay-267104.jpg" alt=""> </div>
+        <div class="item"><img src="./img/pexels-stephan-seeber-1054201.jpg" alt=""></div>
+        <div class="item"> <img src="./img/pexels-pixabay-372098.jpg" alt=""> </div>
+    </div>
       
       
     </section>
@@ -177,6 +136,26 @@
     </a>
     <!-- javascript -->
     <script src="js/app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
+    <script>
+      $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+    </script>
   </body>
 </html>
